@@ -142,6 +142,16 @@ nav ul li a.active {
     /* Primary Blue Accent */
 }
 
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+}
+
 /****************************************/
 /* Hero Section                         */
 /****************************************/
@@ -401,6 +411,30 @@ footer {
     nav ul li a {
         display: block;
         padding: 10px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #121212;
+        padding: 20px 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 
     .tech-content {
