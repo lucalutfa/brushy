@@ -161,7 +161,7 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.9)), url('/images/brushy_background.jpg') no-repeat center center/cover;
+    background: url('/images/brushy_background.jpg') no-repeat center center/cover;
     color: #ffffff;
     padding-top: 80px;
     /* Account for fixed header */
