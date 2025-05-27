@@ -375,9 +375,37 @@ nav ul li a.active {
 }
 
 /****************************************/
+/* Action Section                      */
+/****************************************/
+
+#action {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #121212;
+}
+
+#action h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.action-image-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.action-image-container img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/****************************************/
 /* Reviews Section                      */
 /****************************************/
-/* === Review Carousel Section === */
 #reviews {
     background-color: #121212;
     padding: 60px 20px;
