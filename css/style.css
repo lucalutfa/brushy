@@ -396,21 +396,20 @@ nav ul li a.active {
     position: relative;
     max-width: 500px;
     margin: 0 auto;
+    overflow: hidden;
+    /* Hide non-active panels */
 }
 
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 300%;
+    /* 3 slides * 100% */
 }
 
 .review-panel {
-    min-width: 100%;
-    background: #242424;
-    border-radius: 12px;
-    padding: 30px;
-    color: #e0e0e0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    flex: 0 0 100%;
+    box-sizing: border-box;
 }
 
 .profile-photo {
