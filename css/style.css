@@ -375,9 +375,43 @@ nav ul li a.active {
 }
 
 /****************************************/
+/* Action Section                      */
+/****************************************/
+
+#action {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #121212;
+}
+
+#action h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.action-image-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.action-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-image-container img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/****************************************/
 /* Reviews Section                      */
 /****************************************/
-/* === Review Carousel Section === */
 #reviews {
     background-color: #121212;
     padding: 60px 20px;
@@ -417,19 +451,27 @@ nav ul li a.active {
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%;
 }
 
 .review-panel {
+    background: #1a1a1a;
+    color: #b0b0b0;
+    flex: 0 0 100%;
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.5rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.review-panel .content-wrapper {
+    max-width: 350px;
+    width: 100%;
 }
 
 .profile-photo {
@@ -442,7 +484,7 @@ nav ul li a.active {
 }
 
 .review-panel h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #29ABE2;
     margin-bottom: 10px;
 }
@@ -455,9 +497,9 @@ nav ul li a.active {
 
 .review-panel p {
     font-style: italic;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
 }
 
 /* Carousel Controls */
