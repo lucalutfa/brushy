@@ -421,23 +421,23 @@ nav ul li a.active {
 }
 
 .review-panel {
-    flex: 0 0 100%;
-    background: #242424;
-    border-radius: 12px;
-    padding: 30px;
-    color: #e0e0e0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
 }
 
 .profile-photo {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin: 0 auto 20px auto;
-    display: block;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    display: block;
 }
 
 .review-panel h3 {
