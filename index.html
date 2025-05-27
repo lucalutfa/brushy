@@ -11,6 +11,25 @@
         rel="stylesheet">
 </head>
 
+<script>
+    const slides = document.querySelectorAll('.review-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 3000); // Change slide every 4 seconds
+</script>
+
 <body>
     <header>
         <nav>
@@ -112,22 +131,26 @@
 
         <section id="reviews">
             <h2>What Our Users Say</h2>
-            <div class="reviews-grid">
-                <div class="review-item">
+            <div class="review-carousel">
+                <div class="review-slide">
+                    <img src="images/user1.jpg" alt="Alex's photo">
                     <p>"Brushy changed my mornings. Now I brush while checking emails and making coffee—simultaneously."
                     </p>
                     <h4>- Alex, Early Adopter</h4>
                 </div>
-                <div class="review-item">
+                <div class="review-slide">
+                    <img src="images/user2.jpg" alt="Jamie's photo">
                     <p>"My gums have never been happier, and my dentist is out of a job. Worth every byte."</p>
                     <h4>- Jamie, Tech Enthusiast</h4>
                 </div>
-                <div class="review-item">
+                <div class="review-slide">
+                    <img src="images/user3.jpg" alt="Sam's photo">
                     <p>"I didn’t know I needed AI-powered oral sentiment tracking until Brushy showed me I did."</p>
                     <h4>- Sam, Futurist</h4>
                 </div>
             </div>
         </section>
+
 
 
         <section id="faq">

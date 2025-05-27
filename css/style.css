@@ -392,34 +392,46 @@ nav ul li a.active {
     color: #ffffff;
 }
 
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+.review-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.review-item {
+.review-slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
     background-color: #242424;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.review-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(41, 171, 226, 0.2);
+.review-slide.active {
+    display: flex;
 }
 
-.review-item p {
+.review-slide img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.review-slide p {
     font-size: 1rem;
     color: #c0c0c0;
     margin-bottom: 1em;
     font-style: italic;
 }
 
-.review-item h4 {
+.review-slide h4 {
     font-size: 0.9rem;
     color: #29ABE2;
     font-weight: 400;
